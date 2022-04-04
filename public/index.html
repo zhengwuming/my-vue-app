@@ -1,17 +1,120 @@
 <!DOCTYPE html>
-<html lang="">
+
+<html lang="zh-CN">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <!-- 清除缓存 S -->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+    <meta http-equiv="expires" content="0">
+    <!-- 清除缓存 E -->
+    <title></title>
   </head>
+  <style>
+    html,
+    body,
+    #app {
+      height: 100%;
+      -webkit-overflow-scrolling: touch;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    input,
+    select,
+    textarea {
+      font-size: 100%;
+      outline: none;
+      border: none;
+    }
+
+    fieldset,
+    img {
+      border: 0;
+      outline: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      outline: none;
+      border: none;
+    }
+
+    img[src=''],
+    img:not([src]) {
+      opacity: 0;
+    }
+
+    input[type='search'] {
+      -webkit-appearance: none;
+    }
+
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    .loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999999;
+      background-color: #f2f3f6;
+    }
+
+    .loading.off {
+      display: none;
+    }
+
+    .loading-indicator {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -60px;
+      margin-top: -50px;
+      width: 120px;
+      height: 100px;
+    }
+
+    .loading-indicator::after {
+      display: block;
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -20px;
+      margin-top: -20px;
+      width: 40px;
+      height: 40px;
+      background: url(http://www.sucaijishi.com/uploadfile/2018/0919/20180919030731920.gif) no-repeat 50% 50%;
+      background-size: 40px 40px;
+    }
+  </style>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but template doesn't work properly without JavaScript enabled. Please enable it
+        to continue.</strong
+      >
     </noscript>
+    <!-- <div id="loading" class="loading">
+      <div class="loading-indicator"></div>
+    </div> -->
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script> -->
   </body>
 </html>

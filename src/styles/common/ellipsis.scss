@@ -1,0 +1,16 @@
+@mixin ellipsis($row:1) {
+  @if $row == 1 {
+    @extend %ellipsis-basic;
+    white-space: nowrap;
+  }@else {
+    @extend %ellipsis-basic;
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+  }
+}
+
+%ellipsis-basic{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

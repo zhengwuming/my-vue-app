@@ -1,24 +1,37 @@
-# vue-app
+# my-vue-app
 
-## Project setup
-```
-yarn install
-```
+## Build Setup
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+```bash
+# clone the project
+git clone https://github.com/zhengwuming/my-vue-app.git
 
-### Lints and fixes files
-```
-yarn lint
+# enter the project directory
+cd my-vue-app
+
+# install dependency
+npm install
+
+# develop
+npm run serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Build
+
+```bash
+# build for test environment
+npm run build:stage
+
+# build for production environment
+npm run build:prod
+```
+
+# code format check
+npm run lint
+
+# code format check and auto fix
+npm run lint -- --fix
+```
+
+Copyright (c) 2022-present zhengwuming

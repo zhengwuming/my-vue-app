@@ -1,0 +1,25 @@
+module.exports = {
+  root: true,
+  extends: ['stylelint-config-standard', 'stylelint-config-sass-guidelines'],
+  rules: {
+    'color-hex-length': null,
+    'max-nesting-depth': null,
+    'selector-class-pattern': null,
+    'selector-pseudo-class-no-unknown': null,
+    'selector-no-qualifying-type': null,
+    'selector-max-compound-selectors': null,
+    'no-descending-specificity': null,
+    'property-no-vendor-prefix': null,
+    'property-no-vendor-prefix': null,
+    'value-no-vendor-prefix': null,
+    'scss/at-mixin-pattern': null,
+    'scss/at-import-partial-extension-blacklist': null,
+    'function-parentheses-newline-inside': null,
+    'declaration-property-value-blacklist': null,
+    'no-empty-source': null,
+    'order/properties-alphabetical-order': null,
+    'font-family-no-missing-generic-family-keyword': null,
+    'scss/at-import-partial-extension-blacklist': null,
+    'selector-max-id': null,
+  }
+}

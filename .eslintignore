@@ -1,0 +1,7 @@
+# 配置需要忽略的 eslint 文件
+src/shims-tsx.d.ts
+src/shims-vue.d.ts
+src/submodules/
+src/utils/
+src/views/verfication/contract-custom/
+
